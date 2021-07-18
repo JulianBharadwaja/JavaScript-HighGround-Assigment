@@ -9,11 +9,12 @@ const item = [
 
 const calculatePrices = (itemArr) => {
     let totalPriceArray = itemArr.map(item => item.price - (item.price * (item.discountPercent/100)));
-    let total = 0
+    let total = 0;
     let totalPrice = totalPriceArray.forEach(price => {
         total += price;
     });
-    console.log(total + " USD")
+    let result = total + " USD";
+    return result;
 }
 
 
@@ -24,8 +25,11 @@ const calculateNormalPrices = (itemArr) => {
     for (let i = 0; i < itemArr.length; i++) {
         total = total + itemArr[i].price - (itemArr[i].price * itemArr[i].discountPercent/100);
     }
-    console.log(total + " USD");
+    let result = total + " USD"
+    return result;
 }
 
-calculatePrices(item);
-calculateNormalPrices(item);
+console.log(calculatePrices(item));
+console.log(calculateNormalPrices(item));
+console.log(typeof(calculatePrices(item)))
+console.log(typeof(calculateNormalPrices(item)));
