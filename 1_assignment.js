@@ -32,4 +32,4 @@ const calculateNormalPrices = (itemArr) => {
 console.log(calculatePrices(item));
 console.log(calculateNormalPrices(item));
 console.log(typeof(calculatePrices(item)))
-console.log(typeof(calculateNormalPrices(item)));
+console.log(typeof(calculateNormalPrices(item))); 
