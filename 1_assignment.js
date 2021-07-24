@@ -34,3 +34,4 @@ console.log(calculateNormalPrices(item));
 console.log(typeof(calculatePrices(item)))
 console.log(typeof(calculateNormalPrices(item))); 
 console.log("Hello");
+console.log("Wold");
